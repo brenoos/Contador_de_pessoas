@@ -14,7 +14,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _people = 0;
-  String _infoText = "Pode entrar!";
+  String _infoText = "Pode Entrar!";
 
   void _changePeople(int delta) {
     setState(() {
@@ -45,9 +45,9 @@ class _HomeState extends State<Home> {
             Text(
               "Pessoas: $_people",
               style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.none),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -90,6 +90,8 @@ class _HomeState extends State<Home> {
                 color: Colors.white,
                 fontStyle: FontStyle.italic,
                 fontSize: 30.0,
+                decoration: TextDecoration.none,
+                backgroundColor: Colors.black,
               ),
             ),
           ],
